@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>漫游TianYi OS 11</title>
+<style type="text/css">
+body {
+    background-image: url("./background.gif");
+}
+body,td,th {
+    font-family: "Microsoft YaHei UI Light";
+	
+	background-size: cover
+}
+	.h1{
+    font-size: 50px;
+	
+		
+	}
+	.kong{color: #062751;}
+	.help{
+		color: #000000;
+		font-size: 20px;
+	}
+	.menu{
+	color: #000000;
+	line-height: 70px;
+	font-size: 20px;
+    margin: 0 8px;
+    width: 150px;
+    height: 70px;
+    background-color: #66ccff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+	}
+.menu:hover {
+	transform:translate(13%);
+    width: 200px;
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+</style>
+<script type="text/javascript">
+         
+    var i=0;
+    setInterval('changeColor()',3000);
+        function changeColor(){
+            var div=document.getElementById('h1'); //获得div元素
+            var colorArr=['#66ccff','#00ccff','#000000',]; //建立颜色库
+            if(i==colorArr.length){ 
+                    i=0;
+                }else{
+                    div.style.color=colorArr[i++%colorArr.length]; //循环颜色
+                }
+            }
+</script>
+
+</head>
+
+<body>
+<font size="0" class="kong">.</font>
+<font size="0" class="kong">.</font>
+<center class="h1" id="h1">欢迎使用Tian Yi OS 11</center>
+<font size="0" class="kong">.</font>
+<center class="help">请选择一个选项:</center>
+<font size="0" class="kong">.</font>
+<center><div>
+	<div class="menu" title="获取更新"><a href="https://docs.microsoft.com/zh-cn/windows/deployment/update/windows-update-resources">获取更新</a></div>
+	<font size="0" class="kong">.</font>
+	<div class="menu" title="安装驱动"><a href="https://www.sysceo.com/dc.html">安装驱动</a></div>
+	<font size="0" class="kong">.</font>
+	<div class="menu" title="安装软件"><a href="https://pc.qq.com/">安装软件</a></div>
+	<font size="0" class="kong">.</font>
+	<div class="menu" title="前往官网"><a href="https://aero80wd.github.io">前往官网</a></div>
+</div></center>
+</body>
+</html>
